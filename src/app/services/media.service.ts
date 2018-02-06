@@ -34,7 +34,7 @@ export class MediaService {
 
   getUserData(token) {
     const options = {
-      headers: new HttpHeaders().set('x-access.token', token),
+      headers: new HttpHeaders().set('x-access.token', token)
 
     };
     return this.http.get(this.apiUrl + '/users/user', options);
